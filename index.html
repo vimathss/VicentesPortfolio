@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vicente's Portfólio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/jpg" href="pic/icon2.png"> 
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript"> 
+    function validar () {
+    var nome = form1.nome.value;
+    var comentario = form1.comentario.value;
+
+    if (nome == ""){
+    alert ('Preencha o campo com o seu nome');
+    form1.nome.focus ();
+    return false;
+    }
+
+    if (comentario == ""){
+    alert ('Preencha o campo com o seu comentario');
+    form1.comentario.focus ();
+    return false;
+    }
+    }
+    </script>
+</head>
+<body class="pag1">
+
+    <header>
+        <div class="titulo">Vi</br>cen</br>te's</div>
+        <div class="barra"></div>
+        <div class="logos"><a href="https://twitter.com/vic3ntemcp"><img src="pic/twitter.png" class="logo"></a></div>
+        <div class="logos"><a href="https://www.instagram.com/vicente.mcp/"><img src="pic/insta.png" class="logo"></a></div>
+        <div class="logos"><a href="https://api.whatsapp.com/send?phone=5555994799577&text=oi%20gostoso%20do%20css%20bolado%20%F0%9F%98%8F"><img src="pic/zapzap.png" class="logo"></a></div>
+        <li><a href="#sessao1">Home</a></li>
+        <li><a href="#sessao2">Informações</a></li>
+        <li><a href="#sessao3">Projetos</a></li>
+        <li><a href="#sessao4">Contato</a></li>
+        <div class="direitos">Vicente Pedroso 2023 - &copy Todos os Direitos Reservados</div>
+    </header>
+
+    <div class="sigainstagram">
+        <a href="https://www.instagram.com/vicente.mcp/">
+        <img src="pic/mesiga.png" class="sigainstagram">
+        </a>
+    </div>
+
+    <section id="sessao1">
+        <span class="msg">Ola, eu sou o Vicente</span>
+    </section>
+
+    <section id="sessao2">
+        <div class="titlesobremim">Sobre mim</div>
+        <div class="textosobremim">Meu nome é Vicente, tenho 15 anos e trabalho como garoto de programa na ETEC</br>Minhas habilidades:</div>
+        <div class="habilidades">
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">50%</div>
+            </div>
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">20%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills javascript">5%</div>
+            </div>
+        </div>
+        <div class="terno" alt="foto"><img src="pic/terno.png" class="foto"></div>
+        <div class="hr"></div>
+    </section>
+
+    <section id="sessao3">
+        <div class="titleprojetos">Projetos</div>
+        <div class="projetos">
+                <img src="pic/trabalho1.png" class="trabalhos">
+                <img src="pic/trabalho2.png" class="trabalhos">
+                <a href="https://vimathss.github.io/Vicente-Pedroso---Freddie-Mercury/index.html"><img src="pic/trabalhofreddie.png" class="trabalhos"></a>
+        </div>
+        <div class="hr"></div>
+    </section>
+
+    <section id="sessao4">
+
+        <div class="titlecontato">Contato</div>
+        <div class="formulario">
+        <form name="form1" action="https://api.sheetmonkey.io/form/f9i2yDZrUpQqMhawcpLYdB" method="post">
+            <label for="nome">Mande uma mensagem</label>
+                    <div class="input">
+                    <input name="nome" type="text" placeholder="Seu Nome" rows="7" cols="100">
+                        <div class="textarea">
+                        <textarea name="comentario" placeholder="Avalie meu site de 0 a 10!" type="text" rows="7" cols="100"></textarea>
+                        </div>
+                        <div class="logos"><a href="https://twitter.com/vic3ntemcp"><img src="pic/twitter.png" class="logo"></a></div>
+                        <div class="logos"><a href="https://www.instagram.com/vicente.mcp/"><img src="pic/insta.png" class="logo"></a></div>
+                        <div class="logos"><a href="https://api.whatsapp.com/send?phone=5555994799577&text=oi%20gostoso%20do%20css%20bolado%20%F0%9F%98%8F"><img src="pic/zapzap.png" class="logo"></a></div>
+                    <div class="enviar">
+                    <button type="submit" onclick="return validar()">Enviar</button>
+                </div>
+                </div>
+        </form>
+        </div>
+        </div>
+        <div class="hr2"></div>
+    </section>
+
+</body>
+</html>

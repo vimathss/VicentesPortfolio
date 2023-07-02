@@ -1,0 +1,407 @@
+
+@import url('https://fonts.cdnfonts.com/css/fraset');
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Calibri';
+}
+
+html{
+    scroll-behavior: smooth; /*Movimento de Rolagem suave*/
+    user-select: none;
+}
+::-webkit-scrollbar{/* scrollbar personalizada */
+    width: 10px;
+  }
+::-webkit-scrollbar-thumb{
+    background-color:rgb(102, 32, 167);
+    width: 7px;
+    border-radius: 6px;
+  }
+  .sigainstagram{ /*Botão FIXADO do Instagram*/
+    position: fixed;
+    z-index: 5;
+    margin-left: 83vh;
+    margin-top: 23rem;
+    width: 300px;
+    height: 140px;
+  }
+
+/*INÍCIO DO HEADER*/
+
+  header{ 
+    min-height: 100vh;
+    width: 25vh;
+    background: whitesmoke;
+    box-shadow: 1px 1px 25px black;
+    position: fixed;
+    z-index: 3;
+}
+li{ /*Textos do Header*/
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Fraset', sans-serif;
+    transition: 1s;
+}
+.barra{ /*HR do Header*/
+    background:rgb(102, 32, 167);
+    height: 3px;
+    width: 150px;
+    border-radius: 7px;
+    margin-left: 20px;
+}
+.logos{ /*LOGOS REDES SOCIAIS DO HEADER*/
+    display: inline-block;
+}
+.logo{
+    width: 30px;
+    cursor:pointer;
+    margin-left: 13px;
+    margin-top: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+
+a{ /*TEXTO DO HEADER C/ ANIMAÇÃO*/
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Fraset', sans-serif;
+    transition: 1s;
+}
+
+a:hover{
+    color:rgb(102, 32, 167); 
+}
+@keyframes texto{
+   0%{
+    transform: translateX(0px);
+   }
+   50%{
+    transform: translateX(5px);
+   }
+
+   100%{
+    transform: translateX(0px);
+   }
+}
+li:hover{
+    color:rgb(102, 32, 167);
+    animation-name: texto;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+} /*FIM DO TEXTO COM ANIMAÇÃO*/
+
+.titulo{ /*LOGO HEADER*/
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+    transition: 1s;
+    color:rgb(102, 32, 167);
+}
+
+.direitos{
+    font-family: 'Calibri';
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    margin-top: 44vh;
+    text-align: center;
+}
+
+section{ /*SESSÃO CONFIG*/
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/*INICIO DA PAGINA 1*/
+
+section:nth-of-type(1){ 
+    background-image: url(pic/wallpaper.png);
+    z-index:-4;
+    background-size: cover;
+}
+.msg{ /*ANIMAÇÃO DA PAG1*/
+    margin-left: 25vh;
+    display:block;
+    font-size:75px;
+    font-weight: 700;
+    font-family: 'Akira Expanded', sans-serif;
+    width:24.5ch;
+    margin-top: 45vh;
+    overflow: hidden;
+    color: white;
+    white-space: nowrap;
+    box-shadow: 1rem 0 0 transparent;
+    animation:mar .5s step-end infinite alternate,
+            write 3s steps(22, end);
+}
+
+@keyframes write {0% {width:0}}
+@keyframes mark {50% {box-shadow: 1rem 0 0 transparent;}}
+
+/*FIM DA PÁGINA 1*/
+
+
+
+/*INICIO DA PÁGINA 2*/
+
+section:nth-of-type(2){ 
+    background-color:white;
+}
+.titlesobremim{ /* Titulo DA PÁGINA 2*/
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+    transition: 1s;
+    margin-top: 10rem;
+    margin-left: 15vh;
+    position: absolute;
+    color: rgb(102, 32, 167);
+    display: block;
+}
+
+.textosobremim{
+    font-size: 20px;
+    margin-top: 14rem;
+    margin-left: 64vh;
+    font-family: 'Fraset', sans-serif;
+    display: block;
+    align-items: justify;
+    justify-content: justify;
+    text-align: justify;
+    position: absolute;
+}
+
+/*COMEÇO DAS LINHAS COM HABILIDADES*/
+
+.habilidades{
+    font-family: 'Fraset', sans-serif;
+    width: 800px;
+    margin-left: 58vh;
+    margin-top: 18rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+}
+.container{
+    width:100%;
+    background-color: #ddd;
+    
+}
+
+.skills{
+    font-family: 'Fraset', sans-serif;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Fraset', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+.html{
+    background-color: blueviolet;
+    animation: fillhtml 2s forwards;
+}
+
+.css{
+    background-color:blueviolet;
+    animation: fillcss 2s forwards;
+}
+
+.javascript{
+    background-color:blueviolet;
+    animation: filljavascript 2s forwards;
+}
+
+@keyframes fillhtml{
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+
+@keyframes fillcss{
+    0%{width: 0;}
+    100%{width: 20%;}
+}
+
+@keyframes filljavascript{
+    0%{width: 0;}
+    100%{width: 5%;}
+}
+/*FIM DAS LINHAS COM HABILIDADES*/
+
+
+
+.terno{
+   margin-top:12vh;
+   margin-right: 90vh;
+   width: 600px;
+   height: 500px;
+   display: block;
+}
+.hr{
+    background:rgb(102, 32, 167);
+    height: 3px;
+    width: 100%;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95vh;
+    position: absolute;
+    z-index: 1;
+}
+
+/*FIM DA PÁGINA 2*/
+
+
+
+/*INÍCIO DA PAGINA 3*/
+
+section:nth-of-type(3){/* PÁGINA 3*/
+    background-color: rgb(243, 243, 243);
+}
+
+.titleprojetos{ /* Titulo DA PÁGINA 3*/
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+    transition: 1s;
+    margin-top: 50px;
+    margin-left: 25vh;
+    position: absolute;
+    color: rgb(102, 32, 167);
+    display: block;
+}
+
+.projetos{
+    display: inline-block;
+}
+.trabalhos{
+    top:250%;
+    width: 480px;
+    height: 270px;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 1px 15px black;
+}
+.trabalhos:hover{
+    transform: scale(1.5);
+}
+
+/*FIM DA PAGINA 3*/
+
+
+
+/*INÍCIO DA PAGINA 4*/
+
+section:nth-of-type(4){/* PÁGINA 4*/
+    background:linear-gradient(300deg,  rgb(158, 80, 231), blueviolet, rgb(159, 95, 219));
+}
+
+.titlecontato{ /* Titulo DA PÁGINA 4*/
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 50px;
+    padding: 15px;
+    transition: 1s;
+    margin-top: 50px;
+    margin-left: 25vh;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.formulario{
+    font-family: 'Calibri';
+    font-size: 25px;
+    font-weight: bold;
+   position:absolute; 
+   top:340%;
+   left:56%;
+   transform: translate(-50%, -50%);
+   background:white;
+   border-radius: 10px;
+   padding:15px;
+   width: min-content;
+   height: min-content;
+   box-shadow: 3px 3px 5px black;
+   align-items: center;
+   color: blueviolet;
+}
+textarea {resize: none;}   /*TEXT AREA INICIO */
+p{
+    text-align: justify;
+    border-radius: 50%;
+    text-indent: 35px;
+}
+input{
+    height: 50px;
+    width: 630px;
+}
+button{
+    margin-top: 5px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-family: 'Fraset', sans-serif;
+    background: white ;
+    height: 50px;
+    width: 150px;
+    transition: 0.5s;
+}
+button:hover{
+    background: greenyellow;
+}
+
+input, select, textarea{ /*BOTOES E OPÇÕES*/
+    border-color: #000000;
+    border: 1px solid #000;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 6px;
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    }
+
+input:hover, select:hover, textarea:hover{ /* animação BOTOES E OPÇÕES*/
+transform: scale(1.05);
+}
+.hr2{
+    background:white;
+    height: 3px;
+    width: 100%;
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95vh;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+/*FIM DA PÁGINA 4*/
